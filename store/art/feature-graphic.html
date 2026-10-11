@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Google Play feature graphic, 1024x500. ?lang=pt-BR or ?lang=en picks the tagline. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Marcellus';
+        src: url('../../node_modules/@expo-google-fonts/marcellus/400Regular/Marcellus_400Regular.ttf');
+      }
+      @font-face {
+        font-family: 'Hanken Grotesk';
+        src: url('../../node_modules/@expo-google-fonts/hanken-grotesk/400Regular/HankenGrotesk_400Regular.ttf');
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1024px;
+        height: 500px;
+      }
+      .canvas {
+        width: 1024px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        padding: 0 88px;
+        box-sizing: border-box;
+        background: radial-gradient(circle at 20% 30%, #1d2b27 0%, #0e1513 65%);
+        color: #eef2ef;
+      }
+      img {
+        width: 240px;
+        height: 240px;
+        border-radius: 54px;
+      }
+      h1 {
+        font-family: 'Marcellus', serif;
+        font-weight: 400;
+        font-size: 84px;
+        color: #c8a96a;
+        margin: 0 0 12px;
+        letter-spacing: 2px;
+      }
+      p {
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-size: 34px;
+        margin: 0 0 20px;
+      }
+      .badge {
+        display: inline-block;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        background: #ffd84d;
+        color: #1a1400;
+        border-radius: 8px;
+        padding: 6px 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <img src="../../assets/icon.png" alt="" />
+      <div>
+        <h1>RichMode</h1>
+        <p id="tagline"></p>
+        <span class="badge" id="badge"></span>
+      </div>
+    </div>
+    <script>
+      const copy = {
+        'pt-BR': { tagline: 'Saldo fictício para diversão', badge: 'Simulação: nada é real' },
+        en: { tagline: 'A fictional balance, for fun', badge: 'Simulation: nothing is real' },
+      };
+      const text = copy[new URLSearchParams(location.search).get('lang')] || copy['pt-BR'];
+      document.getElementById('tagline').textContent = text.tagline;
+      document.getElementById('badge').textContent = text.badge;
+    </script>
+  </body>
+</html>

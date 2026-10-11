@@ -1,0 +1,55 @@
+{
+  "common": {
+    "close": "Close",
+    "save": "Save"
+  },
+  "home": {
+    "greeting": "Hi, {{name}}",
+    "balanceTitle": "Balance",
+    "showBalance": "Show balance",
+    "hideBalance": "Hide balance",
+    "hiddenAmount": "Amount hidden",
+    "editValues": "Edit values",
+    "themes": "Themes",
+    "investments": "Investments",
+    "investedTotal": "Total invested",
+    "card": "{{name}} card",
+    "cardNumberHidden": "number hidden"
+  },
+  "shortcuts": {
+    "pix": "Pix",
+    "transfer": "Transfer",
+    "pay": "Pay",
+    "deposit": "Deposit"
+  },
+  "tabs": {
+    "inicio": "Home",
+    "cartoes": "Cards",
+    "investir": "Invest",
+    "perfil": "Profile"
+  },
+  "simulation": {
+    "title": "Simulation",
+    "message": "This is a simulation. Nothing real happens here."
+  },
+  "edit": {
+    "title": "Edit values",
+    "name": "Display name",
+    "namePlaceholder": "What should we call you",
+    "balance": "Balance",
+    "invested": "Amount invested",
+    "currency": "Currency",
+    "maxHint": "Maximum: 999,999,999.00"
+  },
+  "themes": {
+    "title": "Themes"
+  },
+  "onboarding": {
+    "title": "Welcome to RichMode",
+    "intro": "RichMode is an entertainment app. It shows the home screen of a made-up account, with any balance you choose.",
+    "pointFake": "Nothing here is real. There is no money, card or financial institution behind it.",
+    "pointLocal": "Your values stay on your device. Nothing is sent anywhere.",
+    "pointHonest": "Do not use the app to fool anyone in business, credit or sales.",
+    "start": "Got it, let's start"
+  }
+}

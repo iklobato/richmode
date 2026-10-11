@@ -1,0 +1,27 @@
+{
+  "id": "aldara-onyx",
+  "marca": { "nome": "ALDARA", "subtitulo": "Private", "cartao": "Onyx" },
+  "cores": {
+    "fundo": "#0E1513",
+    "superficie": "#16201D",
+    "borda": "#2A3A34",
+    "divisor": "#1F2B27",
+    "texto": "#EEF2EF",
+    "textoSuave": "#9DB0A8",
+    "destaque": "#C8A96A"
+  },
+  "fontes": {
+    "marca": "Marcellus",
+    "corpo": "Hanken Grotesk",
+    "tamanhos": { "saldo": 40, "titulo": 17, "corpo": 15, "legenda": 12 }
+  },
+  "forma": { "raioCartao": 20, "raioLinha": 16, "raioBotao": 999, "espaco": 8 },
+  "layout": [
+    { "bloco": "cabecalho", "variante": "logo-esquerda" },
+    { "bloco": "saldo", "variante": "grande" },
+    { "bloco": "atalhos", "variante": "circulos", "colunas": 4 },
+    { "bloco": "cartao", "variante": "visual" },
+    { "bloco": "investimentos", "variante": "linha" }
+  ],
+  "navegacao": { "tipo": "abas-inferiores", "itens": ["inicio", "cartoes", "investir", "perfil"] }
+}
