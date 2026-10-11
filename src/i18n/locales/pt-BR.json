@@ -1,0 +1,35 @@
+{
+  "common": {
+    "close": "Fechar",
+    "save": "Salvar"
+  },
+  "home": {
+    "greeting": "Olá, {{name}}",
+    "balanceTitle": "Saldo",
+    "showBalance": "Mostrar saldo",
+    "hideBalance": "Ocultar saldo",
+    "hiddenAmount": "Valor oculto",
+    "editValues": "Editar valores",
+    "themes": "Temas",
+    "investments": "Investimentos",
+    "investedTotal": "Total investido",
+    "card": "Cartão {{name}}",
+    "cardNumberHidden": "final oculto"
+  },
+  "shortcuts": {
+    "pix": "Pix",
+    "transfer": "Transferir",
+    "pay": "Pagar",
+    "deposit": "Depositar"
+  },
+  "tabs": {
+    "inicio": "Início",
+    "cartoes": "Cartões",
+    "investir": "Investir",
+    "perfil": "Perfil"
+  },
+  "simulation": {
+    "title": "Simulação",
+    "message": "Isto é uma simulação. Nada acontece de verdade aqui."
+  }
+}

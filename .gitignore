@@ -42,3 +42,6 @@ yarn-error.*
 
 # local Claude Code permissions
 .claude/settings.local.json
+
+# Playwright MCP output
+.playwright-mcp/

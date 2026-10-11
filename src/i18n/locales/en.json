@@ -1,0 +1,35 @@
+{
+  "common": {
+    "close": "Close",
+    "save": "Save"
+  },
+  "home": {
+    "greeting": "Hi, {{name}}",
+    "balanceTitle": "Balance",
+    "showBalance": "Show balance",
+    "hideBalance": "Hide balance",
+    "hiddenAmount": "Amount hidden",
+    "editValues": "Edit values",
+    "themes": "Themes",
+    "investments": "Investments",
+    "investedTotal": "Total invested",
+    "card": "{{name}} card",
+    "cardNumberHidden": "number hidden"
+  },
+  "shortcuts": {
+    "pix": "Pix",
+    "transfer": "Transfer",
+    "pay": "Pay",
+    "deposit": "Deposit"
+  },
+  "tabs": {
+    "inicio": "Home",
+    "cartoes": "Cards",
+    "investir": "Invest",
+    "perfil": "Profile"
+  },
+  "simulation": {
+    "title": "Simulation",
+    "message": "This is a simulation. Nothing real happens here."
+  }
+}

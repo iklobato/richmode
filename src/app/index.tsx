@@ -1,9 +1,3 @@
-import { Text, View } from 'react-native';
+import { HomeScreen } from '@/home/HomeScreen';
 
-export default function HomeScreen() {
-  return (
-    <View>
-      <Text>RichMode</Text>
-    </View>
-  );
-}
+export default HomeScreen;

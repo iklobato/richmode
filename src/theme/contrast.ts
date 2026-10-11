@@ -14,6 +14,11 @@ function relativeLuminance(hex: string): number {
   return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
 }
 
+/** True when light text reads better than dark text on this background (e.g. for the status bar). */
+export function isDarkColor(hex: string): boolean {
+  return contrastRatio('#FFFFFF', hex) > contrastRatio('#000000', hex);
+}
+
 /** Contrast ratio between two `#RRGGBB` colors, from 1 (same) to 21 (black on white). */
 export function contrastRatio(foreground: string, background: string): number {
   const first = relativeLuminance(foreground);
