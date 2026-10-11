@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+  Source art for the app icon, splash and store graphics. Rendered to PNG with a headless
+  browser at the exact pixel size; the query string picks the variant:
+    ?v=icon        1024x1024  full icon, opaque (iOS, store listing)
+    ?v=foreground  1024x1024  Android adaptive foreground, transparent, art inside the 66% safe zone
+    ?v=background  1024x1024  Android adaptive background, solid
+    ?v=monochrome  1024x1024  Android themed icon, white on transparent
+    ?v=splash      1024x1024  splash mark, transparent
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Marcellus';
+        src: url('../../node_modules/@expo-google-fonts/marcellus/400Regular/Marcellus_400Regular.ttf');
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1024px;
+        height: 1024px;
+        background: transparent;
+      }
+      .canvas {
+        position: relative;
+        width: 1024px;
+        height: 1024px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg {
+        background: radial-gradient(circle at 30% 20%, #1d2b27 0%, #0e1513 60%);
+      }
+      .mark {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 14px solid #c8a96a;
+      }
+      .letter {
+        font-family: 'Marcellus', serif;
+        color: #c8a96a;
+        line-height: 1;
+      }
+      .spark {
+        position: absolute;
+        fill: #e8d3a3;
+      }
+      .mono .mark {
+        border-color: #ffffff;
+      }
+      .mono .letter {
+        color: #ffffff;
+      }
+      .mono .spark {
+        fill: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const variant = new URLSearchParams(location.search).get('v') || 'icon';
+      // Mark size per variant: the adaptive foreground must fit Android's 66% safe zone.
+      const markSize = { icon: 640, foreground: 520, monochrome: 520, splash: 760 }[variant];
+      const root = document.getElementById('root');
+      const canvas = document.createElement('div');
+      canvas.className = 'canvas' + (variant === 'icon' || variant === 'background' ? ' bg' : '');
+      if (variant === 'monochrome') canvas.classList.add('mono');
+      if (markSize) {
+        const s = markSize;
+        canvas.innerHTML = `
+          <div class="mark" style="width:${s}px;height:${s}px;border-width:${Math.round(s / 42)}px">
+            <span class="letter" style="font-size:${Math.round(s * 0.62)}px;margin-top:${Math.round(s * 0.06)}px">R</span>
+            <svg class="spark" viewBox="0 0 24 24" style="width:${s * 0.22}px;top:${s * 0.04}px;right:${s * 0.02}px">
+              <path d="M12 0c.6 6.6 5.4 11.4 12 12-6.6.6-11.4 5.4-12 12-.6-6.6-5.4-11.4-12-12C6.6 11.4 11.4 6.6 12 0z"/>
+            </svg>
+          </div>`;
+      }
+      root.appendChild(canvas);
+    </script>
+  </body>
+</html>

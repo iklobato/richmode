@@ -45,3 +45,7 @@ yarn-error.*
 
 # Playwright MCP output
 .playwright-mcp/
+
+# The global gitignore skips these folders; this repo needs them.
+!assets/
+!site/
