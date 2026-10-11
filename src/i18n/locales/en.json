@@ -31,5 +31,17 @@
   "simulation": {
     "title": "Simulation",
     "message": "This is a simulation. Nothing real happens here."
+  },
+  "edit": {
+    "title": "Edit values",
+    "name": "Display name",
+    "namePlaceholder": "What should we call you",
+    "balance": "Balance",
+    "invested": "Amount invested",
+    "currency": "Currency",
+    "maxHint": "Maximum: 999,999,999.00"
+  },
+  "themes": {
+    "title": "Themes"
   }
 }

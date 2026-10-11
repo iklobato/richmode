@@ -5,6 +5,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import type { LayoutBlock } from '@/theme/schema';
 import { fontFace, useTheme } from '@/theme/ThemeProvider';
+import { EditValuesSheet } from '@/sheets/EditValuesSheet';
+import { ThemesSheet } from '@/sheets/ThemesSheet';
 import { Sheet } from '@/ui/Sheet';
 
 import { Balance } from './blocks/Balance';
@@ -17,7 +19,7 @@ import { TabBar } from './TabBar';
 /** Content width cap so the screen stays phone-shaped on tablets. */
 const MAX_CONTENT_WIDTH = 560;
 
-export type OpenSheet = 'simulation' | 'edit' | 'themes' | null;
+type OpenSheet = 'simulation' | 'edit' | 'themes' | null;
 
 type BlockActions = {
   simulate: () => void;
@@ -94,6 +96,8 @@ export function HomeScreen() {
           {t('simulation.message')}
         </Text>
       </Sheet>
+      <EditValuesSheet visible={openSheet === 'edit'} onClose={closeSheet} />
+      <ThemesSheet visible={openSheet === 'themes'} onClose={closeSheet} />
     </View>
   );
 }

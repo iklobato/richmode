@@ -31,5 +31,17 @@
   "simulation": {
     "title": "Simulação",
     "message": "Isto é uma simulação. Nada acontece de verdade aqui."
+  },
+  "edit": {
+    "title": "Editar valores",
+    "name": "Nome exibido",
+    "namePlaceholder": "Como quer ser chamado",
+    "balance": "Saldo",
+    "invested": "Valor investido",
+    "currency": "Moeda",
+    "maxHint": "Máximo: 999.999.999,00"
+  },
+  "themes": {
+    "title": "Temas"
   }
 }
