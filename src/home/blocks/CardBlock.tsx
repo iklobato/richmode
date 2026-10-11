@@ -7,6 +7,8 @@ import { Icon } from '@/ui/Icon';
 
 /** Card art proportions (ISO/IEC 7810 ID-1). */
 const CARD_ASPECT_RATIO = 85.6 / 53.98;
+/** Keeps the card wallet-sized on tablets instead of stretching to the content width. */
+const MAX_CARD_WIDTH = 420;
 
 type CardBlockProps = { variant: 'visual' | 'minimo'; onPress: () => void };
 
@@ -62,7 +64,10 @@ export function CardBlock({ variant, onPress }: CardBlockProps) {
       accessibilityLabel={cardName}
       style={({ pressed }) => ({
         width: '100%',
+        maxWidth: MAX_CARD_WIDTH,
+        alignSelf: 'center',
         aspectRatio: CARD_ASPECT_RATIO,
+        minHeight: MIN_TOUCH_SIZE,
         justifyContent: 'space-between',
         padding: space * 3,
         borderRadius: theme.forma.raioCartao,

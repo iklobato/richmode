@@ -4,7 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useAppStore } from '@/state/store';
 import { fontFace, useTheme } from '@/theme/ThemeProvider';
-import { MIN_TOUCH_SIZE } from '@/ui/a11y';
+import { DISPLAY_TEXT_MAX_SCALE, MIN_TOUCH_SIZE } from '@/ui/a11y';
 
 const MAX_CONTENT_WIDTH = 560;
 const POINTS = ['pointFake', 'pointLocal', 'pointHonest'] as const;
@@ -42,6 +42,7 @@ export function OnboardingScreen() {
       >
         <Text
           accessibilityRole="header"
+          maxFontSizeMultiplier={DISPLAY_TEXT_MAX_SCALE}
           style={{
             color: theme.cores.destaque,
             fontFamily: fontFace(theme, 'marca', 'strong'),

@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 
 import { useAppStore } from '@/state/store';
 import { fontFace, useTheme } from '@/theme/ThemeProvider';
+import { DISPLAY_TEXT_MAX_SCALE } from '@/ui/a11y';
 import { IconButton } from '@/ui/IconButton';
 
 type HeaderProps = {
@@ -21,6 +22,7 @@ export function Header({ variant, onEdit, onThemes }: HeaderProps) {
     <View style={{ flex: 1, alignItems: centered ? 'center' : 'flex-start' }}>
       <Text
         accessibilityRole="header"
+        maxFontSizeMultiplier={DISPLAY_TEXT_MAX_SCALE}
         style={{
           color: theme.cores.destaque,
           fontFamily: fontFace(theme, 'marca', 'strong'),

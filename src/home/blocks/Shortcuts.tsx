@@ -30,6 +30,7 @@ export function Shortcuts({ variant, columns, onPress }: ShortcutsProps) {
           accessibilityLabel={t(`shortcuts.${shortcut}`)}
           style={({ pressed }) => ({
             width: `${100 / columns}%`,
+            minHeight: MIN_TOUCH_SIZE,
             alignItems: 'center',
             flexDirection: squares && columns === 2 ? 'row' : 'column',
             gap: space,

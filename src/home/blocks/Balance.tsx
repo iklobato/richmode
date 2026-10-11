@@ -5,6 +5,7 @@ import { numberLocale } from '@/i18n/i18n';
 import { formatMoney, HIDDEN_AMOUNT } from '@/money/money';
 import { useAppStore } from '@/state/store';
 import { fontFace, useTheme } from '@/theme/ThemeProvider';
+import { DISPLAY_TEXT_MAX_SCALE } from '@/ui/a11y';
 import { FictionalBadge } from '@/ui/FictionalBadge';
 import { IconButton } from '@/ui/IconButton';
 
@@ -55,6 +56,7 @@ export function Balance({ variant }: { variant: 'grande' | 'compacto' }) {
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: theme.forma.espaco }}>
         <Text
           testID="balance-amount"
+          maxFontSizeMultiplier={DISPLAY_TEXT_MAX_SCALE}
           accessibilityLabel={hidden ? t('home.hiddenAmount') : amount}
           adjustsFontSizeToFit
           minimumFontScale={0.5}
