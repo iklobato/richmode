@@ -43,5 +43,13 @@
   },
   "themes": {
     "title": "Temas"
+  },
+  "onboarding": {
+    "title": "Bem-vindo ao RichMode",
+    "intro": "RichMode é um app de entretenimento. Ele mostra a tela de um banco inventado, com o saldo que você escolher.",
+    "pointFake": "Nada aqui é real. Não existe conta, dinheiro nem banco por trás.",
+    "pointLocal": "Os valores ficam só no seu aparelho. Nada é enviado para fora.",
+    "pointHonest": "Não use o app para enganar ninguém em negócios, crédito ou vendas.",
+    "start": "Entendi, começar"
   }
 }
