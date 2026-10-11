@@ -1,0 +1,27 @@
+{
+  "id": "tavris-atlas",
+  "marca": { "nome": "TAVRIS", "subtitulo": "Corporate", "cartao": "Atlas" },
+  "cores": {
+    "fundo": "#0F2342",
+    "superficie": "#16305A",
+    "borda": "#2B4C80",
+    "divisor": "#1D3B69",
+    "texto": "#F2F6FC",
+    "textoSuave": "#AFC2DD",
+    "destaque": "#7FD6CB"
+  },
+  "fontes": {
+    "marca": "IBM Plex Sans",
+    "corpo": "IBM Plex Sans",
+    "tamanhos": { "saldo": 38, "titulo": 17, "corpo": 15, "legenda": 12 }
+  },
+  "forma": { "raioCartao": 8, "raioLinha": 6, "raioBotao": 8, "espaco": 8 },
+  "layout": [
+    { "bloco": "cabecalho", "variante": "logo-esquerda" },
+    { "bloco": "saldo", "variante": "grande" },
+    { "bloco": "cartao", "variante": "visual" },
+    { "bloco": "atalhos", "variante": "quadrados", "colunas": 2 },
+    { "bloco": "investimentos", "variante": "linha" }
+  ],
+  "navegacao": { "tipo": "abas-inferiores", "itens": ["inicio", "cartoes", "investir", "perfil"] }
+}

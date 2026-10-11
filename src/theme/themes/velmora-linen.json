@@ -1,0 +1,27 @@
+{
+  "id": "velmora-linen",
+  "marca": { "nome": "velmora", "subtitulo": "Essential", "cartao": "Linen" },
+  "cores": {
+    "fundo": "#F7F6F2",
+    "superficie": "#FFFFFF",
+    "borda": "#DEDAD0",
+    "divisor": "#ECE9E1",
+    "texto": "#1A1A18",
+    "textoSuave": "#5C5A53",
+    "destaque": "#2F5D50"
+  },
+  "fontes": {
+    "marca": "Manrope",
+    "corpo": "Manrope",
+    "tamanhos": { "saldo": 34, "titulo": 16, "corpo": 15, "legenda": 12 }
+  },
+  "forma": { "raioCartao": 12, "raioLinha": 10, "raioBotao": 12, "espaco": 8 },
+  "layout": [
+    { "bloco": "cabecalho", "variante": "logo-centro" },
+    { "bloco": "saldo", "variante": "compacto" },
+    { "bloco": "atalhos", "variante": "quadrados", "colunas": 4 },
+    { "bloco": "investimentos", "variante": "cartao" },
+    { "bloco": "cartao", "variante": "minimo" }
+  ],
+  "navegacao": { "tipo": "abas-inferiores", "itens": ["inicio", "investir", "perfil"] }
+}
