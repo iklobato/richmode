@@ -48,6 +48,13 @@
     "experiments": {
       "typedRoutes": true
     },
-    "description": "Entertainment app that shows a made-up account home screen with a fictional balance."
+    "description": "Entertainment app that shows a made-up account home screen with a fictional balance.",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ccb7a865-cf68-4f95-a540-f495685ea473"
+      }
+    },
+    "owner": "iklobato"
   }
 }
